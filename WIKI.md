@@ -1,4 +1,4 @@
-Welcome to the Simple-Jekyll-Search wiki!
+WelcomeWelcome to the Simple-Jekyll-Search wiki!
 
 Here is a list of the available options, usage questions, troubleshootings, guides.
 
