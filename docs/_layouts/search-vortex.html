@@ -6,66 +6,50 @@
       <meta name="viewport" content="width=device-width,initial-scale=1" />
 
       <link href="{{ site.url }}/f/{{ site.baseurl | slice: 2, 3 }}/favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-      <style>
-        .note1 {color: #087990!important;background-color: #cff4fc!important;border-color: #9eeaf9!important;}
-        .mw600 {max-width: 600px}
-        .mw480 {max-width: 480px}
-        li:nth-child(odd) {background-color: #f2f2f2;}
-        .x {width: 28px}
-        .y {margin: 0px 6px}
-      </style>
+      <link rel="stylesheet" href="{{ site.url }}/assets/css/search.min.css" />
     </head>
 <body>
 
   <div class="w3-content mw600">
+    <div class="w3-container w3-padding">
+      <div class="w3-display-container h60">
 
-  <div class="w3-container w3-padding">
-  <div class="w3-display-container" style="height:60px;">
+        <div class="w3-display-left w3-margin-left">
+          <img src="{{ site.url }}/assets/images/thedealer.png" class="w3-circle w3-border w3-border-red w3-left wd48" alt="theDealer">
+        </div>
 
-  <div class="w3-display-left w3-margin-left">
-    <img src="{{ site.url }}/assets/images/thedealer.png" class="w3-circle w3-border w3-border-red w3-left" style="width:48px" alt="theDealer">
-  </div>
+        <div class="w3-display-right w3-margin-right">
+          <img src="{{ site.url }}/assets/images/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left wd48" alt="pokedaibo">
+        </div>
 
-  <div class="w3-display-right w3-margin-right">
-    <img src="{{ site.url }}/assets/images/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left" style="width:48px" alt="pokedaibo">
-  </div>
+        <div class="w3-display-middle">
+          <h3>Search Vortex</h3>
+        </div>
 
-  <div class="w3-display-middle">
-    <h3>Search Vortex</h3>
-  </div>
+      </div>
+    </div>
 
-  </div>
-  </div>
+    <div class="w3-container">
+      <div class="w3-panel w3-pale-yellow w3-leftbar w3-border w3-border-yellow padvert">
+        This icon will open the wiki link: <img src="{{ site.url }}/assets/images/exip1.png" class="x"/>
+      </div>
+    </div>
 
-  <div class="w3-container">
-  <div class="w3-panel w3-pale-yellow w3-leftbar w3-border w3-border-yellow" style="padding:2px 5px;vertical-align: baseline">
-    This icon will open the wiki link: <img src="{{ site.url }}/assets/images/exip1.png" class="x"/>
-  </div>
-  </div>
+    <div class="w3-container w3-margin-bottom" id="search-demo-container">
+      <input id="search-input" class="w3-input w3-border w3-border-blue w3-round-large w3-xlarge" type="search" placeholder="Search Pokémon.." title="Type here?">
+    </div>
 
-  <div class="w3-container w3-margin-bottom" id="search-demo-container">
-    <input id="search-input" class="w3-input w3-border w3-border-blue w3-round-large w3-xlarge" type="search" placeholder="Search Pokémon.." title="Type here?">
-  </div>
+    <div class="w3-panel note1 w3-border w3-leftbar w3-border-top w3-hide">
+      The list below currently has 831 items.
+    </div>
 
-  <div class="w3-panel note1 w3-border w3-leftbar w3-border-top w3-hide">
-    The list below currently has 831 items.
-  </div>
+    <div class="w3-container min-h480">
+      <ul id="results-container" class="w3-ul w3-border w3-large"></ul>
+    </div>
 
-  <div class="w3-container">
-    <ul id="results-container" class="w3-ul w3-border w3-large"></ul>
-  </div>
-
-<div class="w3-panel w3-pale-yellow">
-  <ul>
-    <li>site.url = {{ site.url }}</li>
-    <li>site.baseurl = {{ site.baseurl }}</li>
-
-  </ul>
-</div>
-  <footer class="w3-bottom">
-    <p class"w3-tiny">&copy; 2023 - wonderpaper.</p>
-  </footer>
+    <footer class="w3-blue-grey w3-center">
+      <p class"w3-tiny">&copy; 2023 - wonderpaper.</p>
+    </footer>
 
   </div>
 
