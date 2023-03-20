@@ -5,9 +5,10 @@ layout: none
 <!DOCTYPE html>
   <html lang="en">
     <head>
-      <title>Search - Pokémon Vortex</title>
+      <title>wonderpaper | search - Pokémon Vortex</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
+
       <link href="https://smokeinyourbrain.blogspot.com/favicon.ico" rel="icon" type="image/x-icon" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
       <style>
@@ -29,15 +30,6 @@ layout: none
   <div class="w3-display-left w3-margin-left">
     <img src="bs1/thedealer.png" class="w3-circle w3-border w3-border-red w3-left" style="width:48px" alt="theDealer">
   </div>
-
-<div class="w3-panel w3-pale-yellow">
-  <ul>
-    <li>site.url = {{ site.url }}</li>
-    <li>site.baseurl = {{ site.baseurl }}</li>
-    <li>page.json = {{ page.json }}</li>
-
-  </ul>
-</div>
 
   <div class="w3-display-right w3-margin-right">
     <img src="bs1/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left" style="width:48px" alt="pokedaibo">
@@ -67,6 +59,16 @@ layout: none
   <div class="w3-container">
     <ul id="results-container" class="w3-ul w3-border w3-large"></ul>
   </div>
+
+<div class="w3-panel w3-pale-yellow">
+site.baseurl {{ site.baseurl | slice: 2, 3 }}
+  <ul>
+    <li>site.url = {{ site.url }}</li>
+    <li>site.baseurl = {{ site.baseurl }}</li>
+    <li>page.json = {{ page.json }}</li>
+
+  </ul>
+</div>
 
   </div>
 
