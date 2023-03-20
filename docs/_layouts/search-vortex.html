@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>wonderpaper | search - Pokémon Vortex</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <link href="{{ site.url }}/f/se/favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="{{ site.url }}/assets/css/search.min.css" />
-    </head>
+<html lang="en">
+  <head>
+    <title>wonderpaper | search - Pokémon Vortex</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="{{ site.url }}/f/se/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/search.min.css" />
+  </head>
 <body>
-
   <div class="w3-content mw600">
+
     <div class="w3-container w3-padding">
       <div class="w3-display-container h60">
 
@@ -52,14 +52,14 @@
 
   </div>
 
-  <script src="{{ site.baseurl }}/scripts/search.min.js" async></script>
+  <script src="{{ site.baseurl }}/scripts/search.js"></script>
 
   <script>
     window.simpleJekyllSearch = new SimpleJekyllSearch({ 
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       json: '{{ site.baseurl }}/json/vortex.json',
-      searchResultTemplate: '<li>{id} {name}</li>',
+      searchResultTemplate: '<li><a href="{link}/{name}" target="_blank" rel="noopener noreferrer">{id} {name}</a></li>',
       noResultsText: 'No results found',
       limit: 10,
       fuzzy: false
