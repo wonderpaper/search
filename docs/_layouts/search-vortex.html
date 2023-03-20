@@ -9,7 +9,7 @@ layout: none
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-      <link href="https://smokeinyourbrain.blogspot.com/favicon.ico" rel="icon" type="image/x-icon" />
+      <link href="{{ site.url }}/f{{ site.baseurl | slice: 0, 2 }}/favicon.ico" rel="icon" type="image/x-icon" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
       <style>
         .note1 {color: #087990!important;background-color: #cff4fc!important;border-color: #9eeaf9!important;}
@@ -28,11 +28,11 @@ layout: none
   <div class="w3-display-container" style="height:60px;">
 
   <div class="w3-display-left w3-margin-left">
-    <img src="bs1/thedealer.png" class="w3-circle w3-border w3-border-red w3-left" style="width:48px" alt="theDealer">
+    <img src="{{ site.url }}/assets/images/thedealer.png" class="w3-circle w3-border w3-border-red w3-left" style="width:48px" alt="theDealer">
   </div>
 
   <div class="w3-display-right w3-margin-right">
-    <img src="bs1/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left" style="width:48px" alt="pokedaibo">
+    <img src="{{ site.url }}/assets/images/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left" style="width:48px" alt="pokedaibo">
   </div>
 
   <div class="w3-display-middle">
@@ -44,7 +44,7 @@ layout: none
 
   <div class="w3-container">
   <div class="w3-panel w3-pale-yellow w3-leftbar w3-border w3-border-yellow" style="padding:2px 5px;vertical-align: baseline">
-    This icon will open the wiki link: <img src="bs1/exip1.png" class="x"/>
+    This icon will open the wiki link: <img src="{{ site.url }}/assets/images/exip1.png" class="x"/>
   </div>
   </div>
 
@@ -61,7 +61,6 @@ layout: none
   </div>
 
 <div class="w3-panel w3-pale-yellow">
-site.baseurl {{ site.baseurl | slice: 1, 2 }}
   <ul>
     <li>site.url = {{ site.url }}</li>
     <li>site.baseurl = {{ site.baseurl }}</li>
@@ -69,12 +68,11 @@ site.baseurl {{ site.baseurl | slice: 1, 2 }}
 
   </ul>
 </div>
-
-  </div>
-
   <footer class="w3-bottom">
     <p class"w3-tiny">&copy; 2023 - wonderpaper.</p>
   </footer>
+
+  </div>
 
   <script src="{{ page.script }}></script>
 
