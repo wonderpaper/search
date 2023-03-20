@@ -1,0 +1,10 @@
+layout: none
+---
+[
+  {% for item in site.data.vortex %}
+    {
+      "id"    : "{{ item.id }}",
+      "name"  : "{{ item.name }}"
+    } {% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+]
