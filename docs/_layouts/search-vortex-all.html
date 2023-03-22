@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>wonderpaper | Pokémon Vortex - all</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="{{ site.url }}/f/se/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/search.min.css" />
+  </head>
+<body>
+  <div class="w3-content mw600">
+
+    <div class="w3-container w3-padding">
+      <div class="w3-display-container h60">
+
+        <div class="w3-display-left w3-margin-left">
+          <img src="{{ site.url }}/assets/images/thedealer.png" class="w3-circle w3-border w3-border-red w3-left wd48" alt="theDealer">
+        </div>
+
+        <div class="w3-display-right w3-margin-right">
+          <img src="{{ site.url }}/assets/images/pokedaibo.png" class="w3-circle w3-border w3-border-black w3-left wd48" alt="pokedaibo">
+        </div>
+
+        <div class="w3-display-middle">
+          <h3>Vortex list</h3>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="w3-panel note1 w3-border w3-leftbar w3-border-top">
+      The list below currently has 831 items.
+    </div>
+
+    <div class="w3-container min-h480">
+      <ul class="w3-ul w3-large">
+      {% for item in site.data.vortex %}
+        <li><a href="{{ item.link }}/{{ item.name }}" target="_blank" rel="noopener noreferrer">{{ item.id }} {{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <footer class="w3-blue-grey w3-center">
+      <p class"w3-tiny">&copy; 2023 - wonderpaper.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
